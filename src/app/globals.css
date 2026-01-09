@@ -84,9 +84,9 @@
     background-position: center, center;
   }
 
-  /* Hero overlay with nature background */
+  /* Hero overlay with Colombian countryside background */
   .hero-overlay {
-    background-image: url('/hero-nature-background.jpg');
+    background-image: url('/hero-campo-colombiano.jpg');
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
