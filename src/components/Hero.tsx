@@ -37,7 +37,13 @@ export function Hero() {
   return (
     <section className="relative min-h-[82vh] flex items-center justify-center overflow-hidden">
       {/* Background */}
-      <div className="absolute inset-0 photo-placeholder"></div>
+      <div className="absolute inset-0">
+        <img
+          src="/hero-background.jpg"
+          alt="Finca La Carmelita - Cancha de fútbol en medio de la naturaleza"
+          className="w-full h-full object-cover"
+        />
+      </div>
       <div className="absolute inset-0 hero-overlay"></div>
 
       {/* Content */}
