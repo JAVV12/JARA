@@ -44,15 +44,7 @@ export function Header() {
           : 'bg-transparent'
       }`}
     >
-      <div className="container mx-auto px-4 h-full flex items-center justify-between max-w-[1100px]">
-        {/* Logo */}
-        <motion.div
-          whileHover={{ scale: 1.05 }}
-          className="text-2xl font-playfair font-bold text-[var(--forest)] cursor-pointer"
-          onClick={() => window.scrollTo({ top: 0, behavior: 'smooth' })}
-        >
-          Finca La Carmelita
-        </motion.div>
+      <div className="container mx-auto px-4 h-full flex items-center justify-end max-w-[1100px]">
 
         {/* Desktop Navigation */}
         <nav className="hidden md:flex items-center space-x-8">
