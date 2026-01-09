@@ -2,7 +2,29 @@
 
 ## 📋 Descripción para Generación con IA
 
-### 🎯 **Prompt Principal para Midjourney/DALL-E:**
+### 🎯 **Prompt Optimizado para Herramientas de IA:**
+
+```
+A cinematic ultra-realistic photograph of a Colombian countryside finca at golden hour.
+Wide soccer field on the right side, green grass perfectly cut, white goalpost visible.
+On the left side a warm rustic country house with clay roof, wooden details and soft yellow lights inside.
+Mountains and trees in the background.
+Soft mist in the distance.
+Warm sunlight, calm atmosphere, peaceful but energetic.
+Feeling of escape, rest, freedom and sport.
+
+Camera: wide angle 24mm
+Depth of field: natural
+Lighting: golden hour sunlight, soft shadows
+Style: cinematic, photorealistic, premium lifestyle photography
+Color grading: warm beige highlights, soft green shadows, creamy whites
+No people.
+No text.
+No logos.
+High detail, 8K resolution.
+```
+
+### 🎯 **Prompt Anterior (Referencia):**
 
 ```
 Crea una imagen panorámica y atractiva de una hermosa finca rural llamada "Finca La Carmelita" con una cancha de fútbol profesional, que transmita paz, naturaleza y diversión. La imagen debe generar ganas irresistibles de visitar el lugar.
@@ -15,20 +37,12 @@ Crea una imagen panorámica y atractiva de una hermosa finca rural llamada "Finc
 - Cielo azul con algunas nubes suaves
 - Atmósfera cálida y acogedora con luz dorada del atardecer
 
-**Estilo y composición:**
-- Estilo fotorealista con toques artísticos
-- Composición amplia y panorámica (16:9 aspect ratio)
-- Perspectiva ligeramente elevada para mostrar toda la propiedad
-- Colores vibrantes pero naturales - verdes intensos, tierra cálida, cielo azul
-- Enfoque en la tranquilidad y belleza natural
-
 **Elementos específicos para incluir:**
 - Casa principal con techo de tejas rojas
 - Área de descanso con hamacas o muebles de jardín
 - Árboles frutales y flores coloridas
 - Senderos de piedra o tierra
 - Cercas de madera rústica
-- Algunas personas disfrutando tranquilamente (opcional, pero sugerido para escala humana)
 
 **Atmósfera que debe transmitir:**
 - Paz y tranquilidad absoluta
@@ -36,16 +50,6 @@ Crea una imagen panorámica y atractiva de una hermosa finca rural llamada "Finc
 - Alegría y diversión familiar
 - Calidez y hospitalidad colombiana
 - Escape perfecto del estrés urbano
-
-**NO incluir:**
-- Multitudes grandes
-- Construcciones modernas o urbanas
-- Elementos tecnológicos modernos
-- Atmósfera fría o industrial
-- Cualquier elemento negativo
-
-**Resultado esperado:**
-Una imagen que haga que el espectador piense: "Necesito ir ahí AHORA mismo. Ese lugar parece el paraíso perfecto para descansar y jugar fútbol."
 ```
 
 ### 🔧 **Especificaciones Técnicas:**
@@ -56,31 +60,67 @@ Una imagen que haga que el espectador piense: "Necesito ir ahí AHORA mismo. Ese
 - **Estilo:** Fotorealista con elementos artísticos
 - **Colores:** Gama natural y cálida
 
-### 📁 **Ubicación del Archivo:**
+### 📁 **Implementación en el Proyecto:**
 
 Una vez generada la imagen, guárdala como:
 ```
 public/hero-background.jpg
 ```
 
+**Especificaciones requeridas:**
+- **Formato:** JPG o PNG
+- **Resolución mínima:** 1920x1080 (Full HD)
+- **Aspect Ratio:** 16:9 (horizontal)
+- **Calidad:** Alta resolución, sin compresión visible
+
+**El código ya está preparado:**
+```tsx
+<div className="absolute inset-0">
+  <img
+    src="/hero-background.jpg"
+    alt="Finca La Carmelita - Cancha de fútbol en medio de la naturaleza"
+    className="w-full h-full object-cover"
+  />
+</div>
+```
+
+**Nota:** La imagen se mostrará con un overlay semitransparente para mantener la legibilidad del texto.
+
 ### 🎨 **Herramientas Recomendadas para Generación:**
 
-1. **Midjourney** (Discord) - Mejor para paisajes naturales
-2. **DALL-E 3** (ChatGPT Plus) - Excelente para composiciones detalladas
-3. **Stable Diffusion** - Para control fino de elementos
-4. **Canva Magic Studio** - Fácil de usar para principiantes
-
-### ✨ **Ejemplos de Prompts Adicionales:**
-
-**Para Midjourney:**
+#### 1. **Midjourney** (Discord) - RECOMENDADO
 ```
-/imagine prompt: Beautiful Colombian countryside finca with professional soccer field, lush green gardens, traditional architecture, mountain backdrop, golden hour lighting, peaceful atmosphere, inviting and relaxing --ar 16:9 --v 6 --q 2
+/imagine prompt: A cinematic ultra-realistic photograph of a Colombian countryside finca at golden hour. Wide soccer field on the right side, green grass perfectly cut, white goalpost visible. On the left side a warm rustic country house with clay roof, wooden details and soft yellow lights inside. Mountains and trees in the background. Soft mist in the distance. Warm sunlight, calm atmosphere, peaceful but energetic. Feeling of escape, rest, freedom and sport. --ar 16:9 --v 6 --q 2 --style raw
 ```
 
-**Para DALL-E:**
+#### 2. **DALL-E 3** (ChatGPT Plus)
 ```
-Create a photorealistic image of a charming Colombian finca with a professional soccer field. Show lush green gardens, traditional red-roofed house, mountain views, and a sense of peace and invitation. Make it panoramic and highly detailed.
+Generate a cinematic ultra-realistic photograph of a Colombian countryside finca at golden hour. Show a wide soccer field on the right with perfectly cut green grass and visible white goalposts. On the left, depict a warm rustic country house with clay roof, wooden details, and soft yellow lights glowing from inside. Include mountains and trees in the background with soft mist in the distance. Use warm golden hour sunlight with soft shadows. Create a calm but energetic atmosphere that conveys feelings of escape, rest, freedom, and sport. Style: cinematic photorealistic premium lifestyle photography. No people, text, or logos. 16:9 aspect ratio, high detail.
 ```
+
+#### 3. **Stable Diffusion** (Automatic1111 WebUI)
+- **Modelo recomendado:** Realistic Vision o Anything V5
+- **Pasos:** 50-100
+- **CFG Scale:** 7-12
+- **Negative Prompt:** `blurry, low quality, distorted, ugly, poorly drawn, cartoon, anime, text, watermark, logo, people, crowds`
+
+#### 4. **Firefly** (Adobe) - Para usuarios de Adobe Creative Cloud
+
+### ⚙️ **Ajustes Técnicos Recomendados:**
+
+| Herramienta | Aspect Ratio | Resolución | Estilo |
+|-------------|-------------|------------|--------|
+| Midjourney | --ar 16:9 | Automático | --style raw |
+| DALL-E 3 | 16:9 | Alta | Photorealistic |
+| Stable Diffusion | 1920x1080 | 8K | Cinematic |
+| Adobe Firefly | 16:9 | Máxima | Photography |
+
+### 🔍 **Consejos para Mejorar la Generación:**
+
+1. **Midjourney:** Usa `--v 6` para versión más reciente, `--q 2` para mayor calidad
+2. **DALL-E:** Sé específico con la composición (izquierda/derecha)
+3. **Iluminación:** Enfatiza "golden hour" para atmósfera cálida
+4. **Estilo:** "Cinematic photorealistic" da mejores resultados que solo "realistic"
 
 ### 🎯 **Resultado Final:**
 
