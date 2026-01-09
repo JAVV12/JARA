@@ -44,11 +44,10 @@ Landing page premium para Finca La Carmelita, un espacio de descanso en la natur
 
 ### Instalación
 
-1. **Clona o descarga el proyecto**
+1. **Clona el repositorio**
    ```bash
-   # Si clonas desde git
-   git clone <url-del-repo>
-   cd finca-la-carmelita
+   git clone https://github.com/JAVV12/JARA.git
+   cd JARA
    ```
 
 2. **Instala las dependencias**
@@ -91,23 +90,28 @@ npm start
 ```
 ├── src/
 │   ├── app/
-│   │   ├── globals.css      # Estilos globales y Tailwind
-│   │   ├── layout.tsx       # Layout principal con metadata
-│   │   └── page.tsx         # Página principal one-page
-│   └── components/
-│       ├── Header.tsx       # Navegación superior
-│       ├── Hero.tsx         # Sección principal
-│       ├── PlanCards.tsx    # Cards de estadía y cancha
-│       ├── Gallery.tsx      # Galería de imágenes
-│       ├── Location.tsx     # Información de ubicación
-│       ├── FAQ.tsx          # Preguntas frecuentes
-│       ├── Footer.tsx       # Pie de página
-│       └── WhatsAppFloat.tsx # Botón flotante de WhatsApp
+│   │   ├── globals.css          # Tokens CSS + textura papel
+│   │   ├── layout.tsx           # Layout con fonts y metadata
+│   │   └── page.tsx             # Página principal one-page
+│   ├── components/
+│   │   ├── Header.tsx           # Navegación superior
+│   │   ├── Hero.tsx             # Sección hero principal
+│   │   ├── WaveSeparator.tsx    # Separador visual SVG
+│   │   ├── Plans.tsx            # Cards de planes
+│   │   ├── Gallery.tsx          # Galería de imágenes
+│   │   ├── LocationFaq.tsx      # Ubicación + FAQ
+│   │   ├── FinalCTA.tsx         # CTA final
+│   │   ├── Footer.tsx           # Pie de página
+│   │   ├── WhatsAppFloat.tsx    # Botón flotante
+│   │   └── ui/                  # Componentes shadcn/ui
+│   └── lib/
+│       └── utils.ts             # Utilidades
 ├── public/
-│   └── placeholder.jpg      # Placeholder para imágenes
-├── components.json          # Configuración de shadcn/ui
-├── tailwind.config.js       # Configuración de TailwindCSS
-└── package.json
+│   └── placeholder.jpg          # Placeholder para imágenes
+├── components.json              # Config shadcn/ui
+├── tailwind.config.js           # Config Tailwind
+├── tsconfig.json                # Config TypeScript
+└── README.md                    # Este archivo
 ```
 
 ## 🎯 Próximos Pasos
@@ -126,11 +130,22 @@ npm start
 - Considera implementar un CMS para gestión de contenido
 - Agrega analytics (Google Analytics, etc.)
 
-## 🌐 Despliegue en Vercel
+## 🌐 Despliegue
 
+### GitHub Repository
+El proyecto está disponible en: [https://github.com/JAVV12/JARA.git](https://github.com/JAVV12/JARA.git)
+
+```bash
+git clone https://github.com/JAVV12/JARA.git
+```
+
+### Vercel (Recomendado)
 1. **Conecta tu repositorio** en [Vercel](https://vercel.com)
 2. **Configura las variables de entorno** (si es necesario)
 3. **Deploy automático** en cada push a main
+
+### Otros Proveedores
+Compatible con Netlify, Railway, Render, etc.
 
 ## 📞 Contacto
 
