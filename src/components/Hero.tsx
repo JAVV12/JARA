@@ -36,14 +36,7 @@ const badges = [
 export function Hero() {
   return (
     <section className="relative min-h-[82vh] flex items-center justify-center overflow-hidden">
-      {/* AI-Generated Campo Background */}
-      <div className="absolute inset-0">
-        <img
-          src="/hero-ai-background.jpg"
-          alt="Finca La Carmelita - Campo colombiano tranquilo con cancha de fútbol"
-          className="w-full h-full object-cover"
-        />
-      </div>
+      {/* Nature Background with Overlay */}
       <div className="absolute inset-0 hero-overlay"></div>
 
       {/* Floating campo elements - natural and calming */}

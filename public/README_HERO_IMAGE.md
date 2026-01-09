@@ -1,10 +1,10 @@
 # 🖼️ Imagen Hero - Finca La Carmelita
 
 ## ✅ Estado Actual
-- **Código preparado:** ✓ Hero.tsx actualizado para usar imagen AI
-- **Imagen AI lista:** ✓ hero-ai-background.jpg preparado para reemplazo
+- **Código preparado:** ✓ Hero.tsx actualizado para usar imagen de naturaleza
+- **Imagen de naturaleza:** ✓ Paisaje colombiano con montañas, árboles y cielo implementado
 - **Estilos del campo:** ✓ Colores naturales, animaciones suaves aplicadas
-- **Overlay configurado:** ✓ Mantiene legibilidad del texto
+- **Overlay configurado:** ✓ Gradiente sobre imagen para legibilidad del texto
 - **Servidor funcionando:** ✓ Puerto 3000
 
 ## 🎯 Prompt para Generar la Imagen
