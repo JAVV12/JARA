@@ -147,6 +147,17 @@ git clone https://github.com/JAVV12/JARA.git
 ### Otros Proveedores
 Compatible con Netlify, Railway, Render, etc.
 
+## 🖼️ Imagen Hero
+
+La landing page incluye una imagen hero cinematográfica que representa:
+- **Cancha de fútbol profesional** con césped perfecto
+- **Casa rústica colombiana** con techo de barro y luces cálidas
+- **Paisaje montañoso** con árboles y niebla suave
+- **Atmósfera de golden hour** con luz cálida
+- **Sensación de paz y energía deportiva**
+
+**📋 Instrucciones para generar la imagen:** Ver `public/README_HERO_IMAGE.md`
+
 ## 📞 Contacto
 
 - **WhatsApp**: [+57 301 385 1608](https://wa.me/573013851608)

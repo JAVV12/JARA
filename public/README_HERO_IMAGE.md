@@ -1,0 +1,111 @@
+# 🖼️ Imagen Hero - Finca La Carmelita
+
+## 🎯 Prompt para Generar la Imagen
+
+**Archivo objetivo:** `hero-background.jpg`
+
+### 📝 Prompt Completo:
+
+```
+A cinematic ultra-realistic photograph of a Colombian countryside finca at golden hour.
+Wide soccer field on the right side, green grass perfectly cut, white goalpost visible.
+On the left side a warm rustic country house with clay roof, wooden details and soft yellow lights inside.
+Mountains and trees in the background.
+Soft mist in the distance.
+Warm sunlight, calm atmosphere, peaceful but energetic.
+Feeling of escape, rest, freedom and sport.
+
+Camera: wide angle 24mm
+Depth of field: natural
+Lighting: golden hour sunlight, soft shadows
+Style: cinematic, photorealistic, premium lifestyle photography
+Color grading: warm beige highlights, soft green shadows, creamy whites
+No people.
+No text.
+No logos.
+High detail, 8K resolution.
+```
+
+## 🛠️ Cómo Generar la Imagen
+
+### Opción 1: Midjourney (Recomendado)
+1. Ve a Discord y únete al servidor de Midjourney
+2. Usa el comando:
+```
+/imagine prompt: A cinematic ultra-realistic photograph of a Colombian countryside finca at golden hour. Wide soccer field on the right side, green grass perfectly cut, white goalpost visible. On the left side a warm rustic country house with clay roof, wooden details and soft yellow lights inside. Mountains and trees in the background. Soft mist in the distance. Warm sunlight, calm atmosphere, peaceful but energetic. Feeling of escape, rest, freedom and sport. --ar 16:9 --v 6 --q 2 --style raw
+```
+
+### Opción 2: DALL-E 3 (ChatGPT Plus)
+1. Abre ChatGPT Plus
+2. Pega el prompt completo en la interfaz de imagen
+3. Selecciona "Generate image"
+
+### Opción 3: Stable Diffusion
+1. Usa Automatic1111 WebUI
+2. Modelo: Realistic Vision o Anything V5
+3. Pasos: 50-100, CFG Scale: 7-12
+
+## 📋 Especificaciones Técnicas
+
+- **Formato:** JPG o PNG
+- **Resolución:** Mínimo 1920x1080 (Full HD), ideal 3840x2160 (4K)
+- **Aspect Ratio:** 16:9 (horizontal)
+- **Calidad:** Máxima, sin compresión visible
+
+## 🎨 Elementos Clave de la Imagen
+
+### 🏟️ Cancha de Fútbol (Lado Derecho)
+- Césped verde perfectamente cortado
+- Portería blanca visible
+- Líneas de campo definidas
+- Atmósfera deportiva pero relajada
+
+### 🏠 Casa Rústica (Lado Izquierdo)
+- Techo de barro (arcilla)
+- Detalles de madera
+- Luces amarillas suaves en el interior
+- Arquitectura colombiana tradicional
+
+### 🌄 Ambiente General
+- Hora dorada (golden hour)
+- Montañas y árboles al fondo
+- Niebla suave en la distancia
+- Luz cálida con sombras suaves
+
+### 🎭 Estilo Cinematográfico
+- Profundidad de campo natural
+- Iluminación dramática
+- Corrección de color premium
+- Calidad fotográfica profesional
+
+## ✅ Checklist para la Imagen Perfecta
+
+- [ ] Cancha de fútbol amplia y verde
+- [ ] Casa rústica con techo de barro
+- [ ] Montañas al fondo
+- [ ] Atmósfera de golden hour
+- [ ] Niebla suave en distancia
+- [ ] Luces cálidas en la casa
+- [ ] Sin personas, texto o logos
+- [ ] Resolución alta (8K)
+- [ ] Aspect ratio 16:9
+- [ ] Estilo cinematográfico
+
+## 🚀 Implementación
+
+Una vez generada la imagen:
+
+1. **Guardar como:** `public/hero-background.jpg`
+2. **Reemplazar el archivo actual**
+3. **La imagen se mostrará automáticamente** en el hero de la landing page
+
+## 🎯 Resultado Esperado
+
+La imagen debe evocar:
+- **Escape del estrés urbano**
+- **Paz y tranquilidad**
+- **Alegría deportiva**
+- **Belleza natural colombiana**
+- **Calidez hogareña**
+
+¡Esta imagen será el corazón visual de tu landing page! 🌟
