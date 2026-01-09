@@ -147,22 +147,22 @@ git clone https://github.com/JAVV12/JARA.git
 ### Otros Proveedores
 Compatible con Netlify, Railway, Render, etc.
 
-## 🖼️ Imagen Hero Dopaminica
+## 🖼️ Imagen Hero del Campo Tranquilo
 
 La landing page incluye una imagen hero cinematográfica **generada con IA** que representa:
-- **Cancha de fútbol profesional** con césped perfecto
+- **Cancha de fútbol serena** con césped natural y porterías simples
 - **Casa rústica colombiana** con techo de barro y luces cálidas
 - **Paisaje montañoso** con árboles y niebla suave
-- **Atmósfera de golden hour** con luz cálida
-- **Sensación de paz y energía deportiva**
+- **Atmósfera de golden hour** con luz cálida y natural
+- **Sensación de paz, descanso y diversión campestre**
 
-## ⚡ Características Dopaminicas
+## 🌿 Características del Campo Tranquilo
 
-- 🎨 **Colores vibrantes:** Gradientes animados con rosa, naranja, cian y magenta
-- ✨ **Animaciones sutiles:** Efectos de brillo, pulsos y movimientos flotantes
-- 🎯 **Elementos estimulantes:** Botones con efectos de luz, sombras dopaminicas
-- 🌟 **Texto brillante:** Gradientes en títulos para mayor impacto visual
-- 🎪 **Fondo animado:** Gradientes que cambian suavemente creando sensación de energía
+- 🎨 **Colores naturales:** Tonos tierra, verdes suaves, azules cielo y cremas cálidos
+- ✨ **Animaciones suaves:** Movimientos flotantes naturales como hojas y elementos del campo
+- 🎯 **Elementos calmantes:** Sombras suaves, transiciones naturales
+- 🌟 **Texto armonioso:** Gradientes naturales que se funden con el entorno
+- 🌄 **Fondo sereno:** Gradientes sutiles que evocan la tranquilidad del campo colombiano
 
 **📋 Instrucciones para generar la imagen:** Ver `public/README_HERO_IMAGE.md`
 

@@ -36,23 +36,15 @@ const badges = [
 export function Hero() {
   return (
     <section className="relative min-h-[82vh] flex items-center justify-center overflow-hidden">
-      {/* Dopamine Background */}
-      <div className="absolute inset-0">
-        <img
-          src="/hero-background.jpg"
-          alt="Finca La Carmelita - Paisaje vibrante y energético"
-          className="w-full h-full object-cover"
-        />
-        {/* Overlay dopaminico */}
-        <div className="absolute inset-0 bg-gradient-to-br from-[rgba(255,0,128,0.2)] via-[rgba(255,107,53,0.1)] to-[rgba(6,182,212,0.2)] mix-blend-overlay"></div>
-      </div>
+      {/* Campo Tranquilo Background */}
+      <div className="absolute inset-0 hero-campo-bg"></div>
       <div className="absolute inset-0 hero-overlay"></div>
 
-      {/* Floating dopamine elements */}
-      <div className="absolute top-20 left-20 w-4 h-4 bg-[var(--cta)] rounded-full dopamine-float opacity-60"></div>
-      <div className="absolute top-40 right-32 w-6 h-6 bg-[var(--accent1)] rounded-full dopamine-float opacity-40" style={{ animationDelay: '1s' }}></div>
-      <div className="absolute bottom-32 left-40 w-3 h-3 bg-[var(--sky)] rounded-full dopamine-float opacity-50" style={{ animationDelay: '2s' }}></div>
-      <div className="absolute bottom-20 right-20 w-5 h-5 bg-[var(--accent2)] rounded-full dopamine-float opacity-30" style={{ animationDelay: '3s' }}></div>
+      {/* Floating campo elements - natural and calming */}
+      <div className="absolute top-24 left-16 w-3 h-6 bg-[var(--sage)] rounded-full opacity-30 campo-float" style={{ borderRadius: '50% 50% 50% 0' }}></div>
+      <div className="absolute top-36 right-24 w-4 h-8 bg-[var(--forest)] rounded-full opacity-25 campo-float" style={{ animationDelay: '2s', borderRadius: '50% 50% 0 50%' }}></div>
+      <div className="absolute bottom-28 left-32 w-2 h-4 bg-[var(--accent1)] rounded-full opacity-35 campo-float" style={{ animationDelay: '4s', borderRadius: '0 50% 50% 50%' }}></div>
+      <div className="absolute bottom-16 right-16 w-3 h-5 bg-[var(--sky)] rounded-full opacity-20 campo-float" style={{ animationDelay: '1s', borderRadius: '50% 0 50% 50%' }}></div>
 
       {/* Content */}
       <motion.div
@@ -64,7 +56,7 @@ export function Hero() {
         {/* H1 */}
         <motion.h1
           variants={itemVariants}
-          className="h1-responsive font-playfair dopamine-text mb-6"
+          className="h1-responsive font-playfair campo-text mb-6"
         >
           Finca La Carmelita
         </motion.h1>
@@ -93,7 +85,7 @@ export function Hero() {
         >
           <Button
             onClick={() => window.open('https://wa.me/573013851608?text=Hola%2C+quiero+reservar+estadía+en+Finca+La+Carmelita.+¿Qué+fechas+tienen+disponibles%3F', '_blank')}
-            className="dopamine-btn text-white font-montserrat px-[22px] py-[14px] text-button rounded-[12px] transition-all duration-200"
+            className="campo-btn text-white font-montserrat px-[22px] py-[14px] text-button rounded-[12px]"
           >
             Reservar Estadía
           </Button>

@@ -2,8 +2,8 @@
 
 ## ✅ Estado Actual
 - **Código preparado:** ✓ Hero.tsx actualizado sin alt text
-- **Imagen dopaminica:** ✓ SVG animado con gradientes vibrantes creado
-- **Estilos dopaminicos:** ✓ Colores vibrantes, animaciones y efectos aplicados
+- **Imagen del campo:** ✓ SVG tranquilo con naturaleza colombiana creado
+- **Estilos del campo:** ✓ Colores naturales, animaciones suaves aplicadas
 - **Overlay configurado:** ✓ Mantiene legibilidad del texto
 - **Servidor funcionando:** ✓ Puerto 3000
 

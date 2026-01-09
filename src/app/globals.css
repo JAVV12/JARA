@@ -4,29 +4,29 @@
 
 @layer base {
   :root {
-    /* Dopaminic Color Palette - Vibrant & Stimulating */
-    --bg: #FFE8D6; /* Warm peach background */
-    --text: #1A1A1A; /* Deep charcoal for contrast */
-    --forest: #22C55E; /* Bright green - energizing */
-    --sage: #84CC16; /* Electric lime green */
-    --earth: #F59E0B; /* Vibrant amber */
-    --sky: #06B6D4; /* Electric cyan */
-    --cta: #FF0080; /* Hot pink - dopamine trigger */
-    --card: rgba(255,255,255,0.95);
-    --border: rgba(255,105,180,0.20); /* Pink border for energy */
+    /* Campo Tranquilo Color Palette - Natural & Relaxing */
+    --bg: #F7F3E9; /* Warm cream background - like morning light */
+    --text: #2E2E2E; /* Deep charcoal for contrast */
+    --forest: #1F5F43; /* Deep forest green - calming */
+    --sage: #9DB8A0; /* Soft sage green - peaceful */
+    --earth: #7A5A3A; /* Warm earth brown - grounding */
+    --sky: #7DAFC2; /* Soft sky blue - serene */
+    --cta: #22C55E; /* Natural green - inviting */
+    --card: rgba(255,255,255,0.85);
+    --border: rgba(46,46,46,0.15); /* Soft border */
 
-    --radius: 20px; /* More rounded for playfulness */
-    --shadow: 0 20px 40px rgba(255,0,128,0.15); /* Pink shadow */
-    --shadowSoft: 0 12px 24px rgba(255,0,128,0.10); /* Soft pink glow */
+    --radius: 16px; /* Comfortable rounding */
+    --shadow: 0 10px 30px rgba(0,0,0,0.08); /* Soft natural shadow */
+    --shadowSoft: 0 8px 20px rgba(0,0,0,0.06); /* Very soft glow */
 
     --font-playfair: 'Playfair Display', serif;
     --font-montserrat: 'Montserrat', sans-serif;
 
-    /* Additional dopamine colors */
-    --accent1: #FF6B35; /* Vibrant orange */
-    --accent2: #F72585; /* Hot magenta */
-    --accent3: #7209B7; /* Electric purple */
-    --accent4: #3A0CA3; /* Deep purple */
+    /* Additional natural colors */
+    --accent1: #A8DADC; /* Soft mint */
+    --accent2: #F4A261; /* Warm sand */
+    --accent3: #E9C46A; /* Soft gold */
+    --accent4: #264653; /* Deep teal */
   }
 
   * {
@@ -35,27 +35,27 @@
 
   body {
     @apply bg-[var(--bg)] text-[var(--text)] font-montserrat text-body antialiased;
-    /* Dopamine background pattern */
+    /* Campo tranquilo background pattern */
     background-image:
-      radial-gradient(circle at 20% 80%, rgba(255,0,128,0.1) 0%, transparent 50%),
-      radial-gradient(circle at 80% 20%, rgba(255,107,53,0.1) 0%, transparent 50%),
-      radial-gradient(circle at 40% 40%, rgba(6,182,212,0.1) 0%, transparent 50%),
-      linear-gradient(45deg, rgba(255,105,180,0.05) 25%, transparent 25%),
-      linear-gradient(-45deg, rgba(255,105,180,0.05) 25%, transparent 25%);
-    background-size: 400px 400px, 300px 300px, 500px 500px, 30px 30px, 30px 30px;
-    background-position: 0 0, 100% 100%, 50% 50%, 0 0, 15px 15px;
-    animation: dopamineGlow 20s ease-in-out infinite alternate;
+      radial-gradient(circle at 25% 75%, rgba(157,184,160,0.08) 0%, transparent 60%),
+      radial-gradient(circle at 75% 25%, rgba(125,175,194,0.06) 0%, transparent 60%),
+      radial-gradient(circle at 50% 50%, rgba(31,95,67,0.04) 0%, transparent 60%),
+      linear-gradient(45deg, rgba(247,243,233,0.8) 25%, transparent 25%),
+      linear-gradient(-45deg, rgba(247,243,233,0.6) 25%, transparent 25%);
+    background-size: 600px 600px, 400px 400px, 800px 800px, 40px 40px, 40px 40px;
+    background-position: 0 0, 100% 100%, 50% 50%, 0 0, 20px 20px;
+    animation: campoGlow 30s ease-in-out infinite alternate;
   }
 
-  @keyframes dopamineGlow {
+  @keyframes campoGlow {
     0% {
-      filter: hue-rotate(0deg) brightness(1);
+      filter: brightness(1) contrast(1);
     }
     50% {
-      filter: hue-rotate(15deg) brightness(1.05);
+      filter: brightness(1.02) contrast(1.05) saturate(1.1);
     }
     100% {
-      filter: hue-rotate(30deg) brightness(1.1);
+      filter: brightness(1) contrast(1);
     }
   }
 }
@@ -69,131 +69,88 @@
     font-family: var(--font-montserrat);
   }
 
-  /* Dopamine Hero Background */
-  .hero-dopamine-bg {
+  /* Campo Tranquilo Hero Background */
+  .hero-campo-bg {
     background:
       linear-gradient(135deg,
-        rgba(255,0,128,0.8) 0%,
-        rgba(255,107,53,0.8) 25%,
-        rgba(6,182,212,0.8) 50%,
-        rgba(255,0,128,0.8) 75%,
-        rgba(255,105,180,0.8) 100%
+        rgba(247,243,233,0.2) 0%,
+        rgba(157,184,160,0.3) 25%,
+        rgba(125,175,194,0.2) 50%,
+        rgba(244,162,97,0.15) 75%,
+        rgba(247,243,233,0.25) 100%
       ),
       url('/hero-background.jpg');
-    background-size: 400% 400%, cover;
-    background-position: 0% 0%, center;
-    animation: dopamineFlow 15s ease infinite;
+    background-size: cover, cover;
+    background-position: center, center;
   }
 
-  @keyframes dopamineFlow {
-    0% { background-position: 0% 0%, center; }
-    25% { background-position: 100% 0%, center; }
-    50% { background-position: 100% 100%, center; }
-    75% { background-position: 0% 100%, center; }
-    100% { background-position: 0% 0%, center; }
-  }
-
-  /* Hero overlay with dopamine effect */
+  /* Hero overlay with campo effect */
   .hero-overlay {
     background:
       linear-gradient(to bottom,
-        rgba(255,232,214,0.1) 0%,
-        rgba(255,232,214,0.3) 30%,
-        rgba(255,232,214,0.6) 70%,
-        rgba(255,232,214,0.9) 100%
-      ),
-      rgba(255,0,128,0.1);
-    backdrop-filter: blur(2px);
+        rgba(247,243,233,0.1) 0%,
+        rgba(247,243,233,0.4) 30%,
+        rgba(247,243,233,0.7) 70%,
+        rgba(247,243,233,0.95) 100%
+      );
+    backdrop-filter: blur(1px);
   }
 
-  /* Dopamine glass card */
+  /* Campo glass card */
   .glass-card {
     background: var(--card);
-    border: 2px solid var(--border);
-    box-shadow:
-      var(--shadow),
-      0 0 20px rgba(255,0,128,0.1),
-      inset 0 1px 0 rgba(255,255,255,0.2);
-    transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+    border: 1px solid var(--border);
+    box-shadow: var(--shadow);
+    transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
   }
 
   .glass-card:hover {
-    transform: translateY(-8px) scale(1.02);
-    box-shadow:
-      var(--shadow),
-      0 0 30px rgba(255,0,128,0.2),
-      0 0 60px rgba(255,107,53,0.1),
-      inset 0 1px 0 rgba(255,255,255,0.3);
+    transform: translateY(-4px);
+    box-shadow: var(--shadowSoft), 0 0 20px rgba(31,95,67,0.08);
   }
 
-  /* Dopamine button */
-  .dopamine-btn {
-    background: linear-gradient(135deg, var(--cta) 0%, var(--accent2) 100%);
-    box-shadow:
-      0 4px 15px rgba(255,0,128,0.3),
-      inset 0 1px 0 rgba(255,255,255,0.2);
+  /* Campo button */
+  .campo-btn {
+    background: var(--cta);
+    box-shadow: 0 2px 8px rgba(34,197,94,0.2);
     transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
     position: relative;
     overflow: hidden;
   }
 
-  .dopamine-btn::before {
-    content: '';
-    position: absolute;
-    top: 0;
-    left: -100%;
-    width: 100%;
-    height: 100%;
-    background: linear-gradient(90deg, transparent, rgba(255,255,255,0.2), transparent);
-    transition: left 0.5s;
+  .campo-btn:hover {
+    transform: translateY(-1px);
+    box-shadow: 0 4px 12px rgba(34,197,94,0.3);
   }
 
-  .dopamine-btn:hover::before {
-    left: 100%;
-  }
-
-  .dopamine-btn:hover {
-    transform: translateY(-2px) scale(1.05);
-    box-shadow:
-      0 8px 25px rgba(255,0,128,0.4),
-      inset 0 1px 0 rgba(255,255,255,0.3);
-  }
-
-  /* Dopamine text glow */
-  .dopamine-text {
-    text-shadow:
-      0 0 10px rgba(255,0,128,0.3),
-      0 0 20px rgba(255,107,53,0.2),
-      0 0 30px rgba(6,182,212,0.1);
+  /* Campo text */
+  .campo-text {
     background: linear-gradient(135deg,
       var(--forest) 0%,
-      var(--cta) 50%,
-      var(--accent1) 100%);
+      var(--sage) 100%);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     background-clip: text;
   }
 
-  /* Floating dopamine elements */
-  .dopamine-float {
-    animation: dopamineFloat 6s ease-in-out infinite;
+  /* Floating campo elements */
+  .campo-float {
+    animation: campoFloat 8s ease-in-out infinite;
   }
 
-  @keyframes dopamineFloat {
-    0%, 100% { transform: translateY(0px) rotate(0deg); }
-    25% { transform: translateY(-10px) rotate(5deg); }
-    50% { transform: translateY(-20px) rotate(0deg); }
-    75% { transform: translateY(-10px) rotate(-5deg); }
+  @keyframes campoFloat {
+    0%, 100% { transform: translateY(0px); }
+    50% { transform: translateY(-8px); }
   }
 
-  /* Pulse animation */
-  .dopamine-pulse {
-    animation: dopaminePulse 2s cubic-bezier(0.4, 0, 0.6, 1) infinite;
+  /* Gentle pulse animation */
+  .campo-pulse {
+    animation: campoPulse 3s ease-in-out infinite;
   }
 
-  @keyframes dopaminePulse {
+  @keyframes campoPulse {
     0%, 100% { opacity: 1; }
-    50% { opacity: 0.5; }
+    50% { opacity: 0.8; }
   }
 }
 
