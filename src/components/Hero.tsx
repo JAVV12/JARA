@@ -40,7 +40,7 @@ export function Hero() {
       <div className="absolute inset-0">
         <img
           src="/hero-background.jpg"
-          alt="Finca La Carmelita - Cancha de fútbol en medio de la naturaleza"
+          alt=""
           className="w-full h-full object-cover"
         />
       </div>

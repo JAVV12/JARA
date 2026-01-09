@@ -1,8 +1,13 @@
 # 🖼️ Imagen Hero - Finca La Carmelita
 
+## ✅ Estado Actual
+- **Código preparado:** ✓ Hero.tsx actualizado sin alt text
+- **Archivo placeholder:** ✓ hero-background.jpg existe
+- **Overlay configurado:** ✓ Mantiene legibilidad del texto
+
 ## 🎯 Prompt para Generar la Imagen
 
-**Archivo objetivo:** `hero-background.jpg`
+**Archivo objetivo:** `public/hero-background.jpg`
 
 ### 📝 Prompt Completo:
 
@@ -95,9 +100,12 @@ High detail, 8K resolution.
 
 Una vez generada la imagen:
 
-1. **Guardar como:** `public/hero-background.jpg`
-2. **Reemplazar el archivo actual**
-3. **La imagen se mostrará automáticamente** en el hero de la landing page
+1. **Descargar la imagen** generada por IA
+2. **Guardar como:** `public/hero-background.jpg`
+3. **Reemplazar el archivo actual** (sobreescribirlo)
+4. **La imagen se mostrará automáticamente** en el hero de la landing page
+
+**Nota:** El código ya está configurado para mostrar la imagen con un overlay semitransparente que mantiene la legibilidad del texto blanco.
 
 ## 🎯 Resultado Esperado
 
@@ -107,5 +115,21 @@ La imagen debe evocar:
 - **Alegría deportiva**
 - **Belleza natural colombiana**
 - **Calidez hogareña**
+
+## 🎯 Próximos Pasos
+
+1. **Genera la imagen** usando uno de los prompts proporcionados
+2. **Descarga la imagen** en alta resolución
+3. **Reemplaza** `public/hero-background.jpg` con la nueva imagen
+4. **Ejecuta** `npm run dev` para ver el resultado
+5. **Sube los cambios** a GitHub si es necesario
+
+## 💡 Consejos para Mejor Resultado
+
+- Usa **Midjourney** para el mejor resultado cinematográfico
+- Asegúrate de que la imagen tenga exactamente **16:9 aspect ratio**
+- La resolución mínima debe ser **1920x1080**
+- Verifica que no haya texto, logos o personas en la imagen
+- El tono debe ser **cálido y cinematográfico**
 
 ¡Esta imagen será el corazón visual de tu landing page! 🌟
