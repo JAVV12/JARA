@@ -149,7 +149,7 @@ Compatible con Netlify, Railway, Render, etc.
 
 ## 🖼️ Imagen Hero del Campo Tranquilo
 
-La landing page incluye una imagen hero cinematográfica **generada con IA** que representa:
+La landing page incluye una imagen hero cinematográfica **generada con IA** preparada que representa:
 - **Cancha de fútbol serena** con césped natural y porterías simples
 - **Casa rústica colombiana** con techo de barro y luces cálidas
 - **Paisaje montañoso** con árboles y niebla suave

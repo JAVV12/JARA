@@ -1,8 +1,8 @@
 # 🖼️ Imagen Hero - Finca La Carmelita
 
 ## ✅ Estado Actual
-- **Código preparado:** ✓ Hero.tsx actualizado sin alt text
-- **Imagen del campo:** ✓ SVG tranquilo con naturaleza colombiana creado
+- **Código preparado:** ✓ Hero.tsx actualizado para usar imagen AI
+- **Imagen AI lista:** ✓ hero-ai-background.jpg preparado para reemplazo
 - **Estilos del campo:** ✓ Colores naturales, animaciones suaves aplicadas
 - **Overlay configurado:** ✓ Mantiene legibilidad del texto
 - **Servidor funcionando:** ✓ Puerto 3000
@@ -106,12 +106,19 @@ High detail, 8K resolution.
 
 ## 🚀 Implementación
 
-Una vez generada la imagen:
+### Para Usar una Imagen AI Real:
 
-1. **Descargar la imagen** generada por IA
-2. **Guardar como:** `public/hero-background.jpg`
-3. **Reemplazar el archivo actual** (sobreescribirlo)
-4. **La imagen se mostrará automáticamente** en el hero de la landing page
+1. **Genera la imagen** usando el prompt proporcionado en Midjourney, DALL-E, o Stable Diffusion
+2. **Descarga la imagen** en alta resolución (mínimo 1920x1080, ideal 8K)
+3. **Guárdala como:** `public/hero-ai-background.jpg`
+4. **Reemplaza el archivo actual** (sobreescribe el existente)
+5. **La imagen se mostrará automáticamente** en el hero de la landing page
+
+### Archivo Actual:
+- **Ubicación:** `public/hero-ai-background.jpg`
+- **Formato:** JPG o PNG
+- **Resolución:** Mínima 1920x1080
+- **Aspect Ratio:** 16:9 horizontal
 
 **Nota:** El código ya está configurado para mostrar la imagen con un overlay semitransparente que mantiene la legibilidad del texto blanco.
 
