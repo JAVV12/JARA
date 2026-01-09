@@ -68,7 +68,7 @@ export function Plans() {
           <motion.div
             variants={cardVariants}
             whileHover={{ y: -4 }}
-            className="glass-card rounded-[16px] overflow-hidden transition-all duration-200"
+            className="glass-card rounded-[20px] overflow-hidden dopamine-pulse"
           >
             <div className="bg-[var(--forest)] p-8 text-white">
               <div className="flex items-center mb-4">
@@ -93,7 +93,7 @@ export function Plans() {
 
               <Button
                 onClick={() => window.open('https://wa.me/573013851608?text=Hola%2C+quiero+reservar+estadía+en+Finca+La+Carmelita.+¿Qué+fechas+tienen+disponibles%3F', '_blank')}
-                className="w-full bg-[var(--forest)] hover:bg-[var(--forest)]/90 text-white font-montserrat py-3 text-button rounded-[12px] transition-all duration-200"
+                className="w-full dopamine-btn text-white font-montserrat py-3 text-button rounded-[12px]"
               >
                 Reservar Estadía
               </Button>
@@ -104,7 +104,8 @@ export function Plans() {
           <motion.div
             variants={cardVariants}
             whileHover={{ y: -4 }}
-            className="glass-card rounded-[16px] overflow-hidden transition-all duration-200"
+            className="glass-card rounded-[20px] overflow-hidden dopamine-pulse"
+            style={{ animationDelay: '0.5s' }}
           >
             <div className="bg-[var(--earth)] p-8 text-white">
               <div className="flex items-center mb-4">
@@ -129,7 +130,7 @@ export function Plans() {
 
               <Button
                 onClick={() => window.open('https://wa.me/573013851608?text=Hola%2C+quiero+alquilar+la+cancha+de+Finca+La+Carmelita.+¿Qué+horarios+hay+disponibles%3F', '_blank')}
-                className="w-full bg-[var(--earth)] hover:bg-[var(--earth)]/90 text-white font-montserrat py-3 text-button rounded-[12px] transition-all duration-200"
+                className="w-full bg-[var(--accent1)] hover:bg-[var(--accent1)]/90 text-white font-montserrat py-3 text-button rounded-[12px] transition-all duration-200 dopamine-btn"
               >
                 Alquilar Cancha
               </Button>

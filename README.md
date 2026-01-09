@@ -147,14 +147,22 @@ git clone https://github.com/JAVV12/JARA.git
 ### Otros Proveedores
 Compatible con Netlify, Railway, Render, etc.
 
-## 🖼️ Imagen Hero
+## 🖼️ Imagen Hero Dopaminica
 
-La landing page incluye una imagen hero cinematográfica que representa:
+La landing page incluye una imagen hero cinematográfica **generada con IA** que representa:
 - **Cancha de fútbol profesional** con césped perfecto
 - **Casa rústica colombiana** con techo de barro y luces cálidas
 - **Paisaje montañoso** con árboles y niebla suave
 - **Atmósfera de golden hour** con luz cálida
 - **Sensación de paz y energía deportiva**
+
+## ⚡ Características Dopaminicas
+
+- 🎨 **Colores vibrantes:** Gradientes animados con rosa, naranja, cian y magenta
+- ✨ **Animaciones sutiles:** Efectos de brillo, pulsos y movimientos flotantes
+- 🎯 **Elementos estimulantes:** Botones con efectos de luz, sombras dopaminicas
+- 🌟 **Texto brillante:** Gradientes en títulos para mayor impacto visual
+- 🎪 **Fondo animado:** Gradientes que cambian suavemente creando sensación de energía
 
 **📋 Instrucciones para generar la imagen:** Ver `public/README_HERO_IMAGE.md`
 
